@@ -3,6 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import VueAwesomeSwiper from 'vue-awesome-swiper' //轮播插件
 //click事件延迟300s解决
 import fastClick from 'fastclick'
 //默认样式重置
@@ -11,9 +12,12 @@ import 'styles/reset.css'
 import 'styles/border.css'
 //引入iconfont
 import 'styles/iconfont.css'
+// 轮播插件 require styles
+import 'swiper/dist/css/swiper.css'
 Vue.config.productionTip = false
 //在body上引用
 fastClick.attach(document.body)
+Vue.use(VueAwesomeSwiper)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

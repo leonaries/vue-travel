@@ -21,20 +21,20 @@
 
 <style scoped lang="stylus">
     @import "~styles/varibles.styl"
-    .header{
+    .header
         display flex
         line-height :.86rem
         background :$bgColor
         color:#fff
-        .header-left{
+        .header-left
             width:.64rem
             float left
-            .back-icon{
+            .back-icon
                 font-size .4rem
                 text-align center
-            }
-        }
-        .header-input{
+
+
+        .header-input
             flex 1
             height: .64rem
             line-height: .64rem
@@ -44,15 +44,15 @@
             border-radius :.1rem
             color:#ccc
             padding-left .2rem
-        }
-        .header-right{
+
+        .header-right
             width:1.24rem
             float right
             text-align center
-            .arrow-icon{
+            .arrow-icon
                 font-size .24rem
                 margin-left:-0.04rem
-            }
-        }
-    }
+
+
+
 </style>
