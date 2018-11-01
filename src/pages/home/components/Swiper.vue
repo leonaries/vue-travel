@@ -16,8 +16,8 @@
         data () {
             return {
                 swiperOption:{
-                    pagination:'.swiper-pagination',
-                    loop:true
+                    pagination:'.swiper-pagination',//轮播圆点
+                    loop:true //轮播可以循环
                 },
                 swiperList:[
                     {
@@ -45,7 +45,7 @@
         overflow :hidden
         width: 100%
         height: 0
-        padding-bottom: 31.25%
+        padding-bottom: 26.5%
         .swiper-img
             width:100%
 </style>
