@@ -1,6 +1,6 @@
 <template>
     <div class="icons">
-        <swiper>
+        <swiper :swiperOption="swiperOption">
             <!-- slides -->
             <swiper-slide v-for="(page,index) of pages" :key="index">
                 <div class="icon" v-for="item of page" :key="item.id">
@@ -18,58 +18,14 @@
 <script>
     export default {
         name: "HomeIcons",
+        props:{
+            iconList:Array
+        },
         data (){
             return {
-                iconList:[{
-                    id:'0001',
-                    imgUrl:'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png',
-                    desc:'景点门票景点门票景点门票景点门票景点门票'
-                },{
-                    id:'0002',
-                    imgUrl:'http://img1.qunarzz.com/piao/fusion/1803/ab/6f7d6e44963c9302.png',
-                    desc:'泡温泉'
-                },{
-                    id:'0003',
-                    imgUrl:'http://img1.qunarzz.com/piao/fusion/1804/ff/fdf170ee89594b02.png',
-                    desc:'成都必游'
-                },{
-                    id:'0004',
-                    imgUrl:'http://img1.qunarzz.com/piao/fusion/1803/e3/67df61427c8e1302.png',
-                    desc:'川剧变脸'
-                },{
-                    id:'0005',
-                    imgUrl:'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png',
-                    desc:'景点门票'
-                },{
-                    id:'0006',
-                    imgUrl:'http://img1.qunarzz.com/piao/fusion/1803/ab/6f7d6e44963c9302.png',
-                    desc:'泡温泉'
-                },{
-                    id:'0007',
-                    imgUrl:'http://img1.qunarzz.com/piao/fusion/1804/ff/fdf170ee89594b02.png',
-                    desc:'成都必游'
-                },{
-                    id:'0008',
-                    imgUrl:'http://img1.qunarzz.com/piao/fusion/1803/e3/67df61427c8e1302.png',
-                    desc:'川剧变脸'
-                },{
-                    id:'0009',
-                    imgUrl:'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png',
-                    desc:'景点门票'
-                },{
-                    id:'0010',
-                    imgUrl:'http://img1.qunarzz.com/piao/fusion/1803/ab/6f7d6e44963c9302.png',
-                    desc:'泡温泉'
-                },{
-                    id:'0011',
-                    imgUrl:'http://img1.qunarzz.com/piao/fusion/1804/ff/fdf170ee89594b02.png',
-                    desc:'成都必游'
-                },{
-                    id:'0012',
-                    imgUrl:'http://img1.qunarzz.com/piao/fusion/1803/e3/67df61427c8e1302.png',
-                    desc:'川剧变脸'
-                },
-                ]
+                swiperOption:{
+                    autoplay:false
+                }
             }
         },
         computed :{
