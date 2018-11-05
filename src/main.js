@@ -4,6 +4,7 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import VueAwesomeSwiper from 'vue-awesome-swiper' //轮播插件
+import store from './store'
 //click事件延迟300s解决
 import fastClick from 'fastclick'
 //默认样式重置
@@ -20,8 +21,9 @@ fastClick.attach(document.body)
 Vue.use(VueAwesomeSwiper)
 /* eslint-disable no-new */
 new Vue({
-  el: '#app',
-  router,
-  components: { App },
-  template: '<App/>'
+    el: '#app',
+    router,
+    store,
+    components: { App },
+    template: '<App/>'
 })
