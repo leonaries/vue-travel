@@ -15,6 +15,8 @@ import 'styles/border.css'
 import 'styles/iconfont.css'
 // 轮播插件 require styles
 import 'swiper/dist/css/swiper.css'
+//兼容ES6
+import 'babel-polyfill'
 Vue.config.productionTip = false
 //在body上引用
 fastClick.attach(document.body)
